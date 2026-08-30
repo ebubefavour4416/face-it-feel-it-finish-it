@@ -71,6 +71,30 @@
     background:var(--cream-alt);
     display:flex; align-items:center; justify-content:center;
   }
+  .dl-mockup{
+    width:40px; height:56px; border-radius:4px; flex-shrink:0;
+    box-shadow:0 6px 14px rgba(46,32,22,0.18);
+    overflow:hidden;
+  }
+  .dl-mockup img{width:100%; height:100%; object-fit:cover;}
+
+  /* Hero photo */
+  .hero-photo{
+    margin:32px auto 0;
+    max-width:420px;
+    aspect-ratio:16/10;
+    border-radius:12px;
+    overflow:hidden;
+    background:linear-gradient(160deg, var(--sage) 0%, var(--sage-dark) 100%);
+    display:flex; align-items:center; justify-content:center;
+    padding:20px; text-align:center;
+  }
+  .hero-photo .placeholder-label{color:rgba(255,255,255,0.88); font-size:12.5px; line-height:1.6;}
+  .hero-photo .placeholder-tag{
+    display:inline-block; background:rgba(255,255,255,0.2); color:#fff;
+    padding:4px 10px; border-radius:4px; font-size:11px; font-weight:600;
+    letter-spacing:0.06em; text-transform:uppercase; margin-bottom:8px;
+  }
   .dl-info h4{font-size:15.5px; margin-bottom:3px;}
   .dl-info p{font-size:13px; color:var(--charcoal-soft);}
   .dl-btn{
@@ -145,6 +169,10 @@
     </div>
     <h1 class="reveal in">You're in. Welcome to your healing journey.</h1>
     <p class="reveal in">Thank you for trusting Face It, Feel It, Finish It. Your ebook and bonuses are ready below, whenever you're ready to begin.</p>
+
+    <div class="hero-photo reveal in">
+      <img src="images/thankyou-hero-woman.png" alt="Woman smiling warmly at her phone in cozy indoor lighting" style="width:100%; height:100%; object-fit:cover; border-radius:inherit;">
+    </div>
   </div>
 </section>
 
@@ -155,7 +183,7 @@
 
     <div class="download-card reveal in">
       <div class="dl-info">
-        <div class="dl-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5F6E54" stroke-width="1.6"><path d="M4 19h16M12 3v13m0 0l-4-4m4 4l4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="dl-mockup"><img src="images/mockup-main-standing.png" alt="Ebook cover"></div>
         <div>
           <h4>Face It, Feel It, Finish It</h4>
           <p>Your full ebook, delivered as a PDF</p>
@@ -166,7 +194,7 @@
 
     <div class="download-card reveal in">
       <div class="dl-info">
-        <div class="dl-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5F6E54" stroke-width="1.6"><path d="M4 19h16M12 3v13m0 0l-4-4m4 4l4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="dl-mockup"><img src="images/bonus1-journal-cover.png" alt="Companion Journal cover"></div>
         <div>
           <h4>The Companion Journal</h4>
           <p>Bonus 1, delivered as a PDF</p>
@@ -177,7 +205,7 @@
 
     <div class="download-card reveal in">
       <div class="dl-info">
-        <div class="dl-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5F6E54" stroke-width="1.6"><path d="M4 19h16M12 3v13m0 0l-4-4m4 4l4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="dl-mockup"><img src="images/bonus2-refguide-cover.png" alt="Quick-Reference Guide cover"></div>
         <div>
           <h4>The Unfinished Business Quick-Reference Guide</h4>
           <p>Bonus 2, delivered as a PDF</p>
