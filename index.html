@@ -187,7 +187,7 @@
     margin-top:40px;
     border-radius:14px;
     background:linear-gradient(160deg, var(--cream-alt) 0%, #E4D3B8 100%);
-    padding:40px 24px;
+    padding:20px;
     display:flex; align-items:center; justify-content:center;
     min-height:220px;
     text-align:center;
@@ -209,8 +209,9 @@
     width:100%; height:100%; object-fit:cover; border-radius:inherit;
   }
   .mockup-stage img{
-    max-width:220px; width:100%; border-radius:8px;
+    max-width:100%; width:100%; height:auto; border-radius:8px;
     box-shadow:0 20px 40px rgba(46,32,22,0.25);
+    display:block;
   }
   .bonus-cover img{width:100%; height:100%; object-fit:cover;}
   .flag-note{
@@ -382,6 +383,12 @@
     background:var(--cream-alt);
     border-radius:14px;
   }
+  .guarantee-icon{
+    width:56px; height:56px; border-radius:50%;
+    background:var(--terracotta);
+    display:flex; align-items:center; justify-content:center;
+    margin:0 auto 18px;
+  }
   .guarantee-box h3{font-size:24px; margin-bottom:14px;}
   .guarantee-box p{color:var(--charcoal-soft); font-size:15.5px;}
 
@@ -427,13 +434,15 @@
     color:var(--sage-dark); margin-bottom:14px; display:block;
   }
   .testi-card p.quote{font-size:15px; color:var(--charcoal-soft); font-style:italic; margin-bottom:16px;}
-  .testi-attr{display:flex; align-items:center; gap:10px;}
+  .testi-attr{display:flex; align-items:center; gap:12px;}
   .initials{
-    width:36px; height:36px; border-radius:50%;
+    width:52px; height:52px; border-radius:50%;
     background:var(--cream-alt);
     display:flex; align-items:center; justify-content:center;
     font-family:'Fraunces'; font-size:13px; font-weight:600; color:var(--terracotta);
+    overflow:hidden; flex-shrink:0;
   }
+  .initials img{width:100%; height:100%; object-fit:cover;}
   .testi-attr span{font-size:13.5px; color:var(--charcoal-soft);}
 
   /* ===== PRICING ===== */
@@ -496,6 +505,7 @@
     .footer-grid{flex-direction:column;}
     .mockup-card{width:90px; height:128px;}
     .mockup-card.b, .mockup-card.c{width:76px; height:112px;}
+    .footer-bottom{flex-direction:column; text-align:center; align-items:center;}
   }
 </style>
 </head>
@@ -512,7 +522,7 @@
     <a href="#pricing" class="btn">Start Healing Today</a>
 
     <div class="hero-image reveal">
-      <img src="images/hero-woman-window.png" alt="Woman sitting by a window in warm light, holding a mug, reflective mood">
+      <img src="images/hero-woman-window.jpg" fetchpriority="high" alt="Woman sitting by a window in warm light, holding a mug, reflective mood">
     </div>
   </div>
 </section>
@@ -546,7 +556,7 @@
       </div>
     </div>
     <div class="photo-block reveal">
-      <img src="images/problem-bed-dim.png" alt="Person sitting on the edge of a bed in dim evening light, phone face-down beside them">
+      <img src="images/problem-bed-dim.jpg" loading="lazy" alt="Person sitting on the edge of a bed in dim evening light, phone face-down beside them">
     </div>
   </div>
 </section>
@@ -555,11 +565,12 @@
 <section class="section section-card">
   <div class="container split">
     <div class="story-visual reveal-left">
-      <img src="images/story-phone-photo.png" alt="Hands holding a phone showing a blurred old photo of two people">
+      <img src="images/story-phone-photo.jpg" loading="lazy" alt="Hands holding a phone showing a blurred old photo of two people">
     </div>
     <div class="story-text reveal-right">
       <span class="eyebrow">A familiar story</span>
       <h2>"I told myself I was fine. I wasn't."</h2>
+
       <p>She kept busy. New gym routine, new friends, a packed calendar. From the outside, she looked completely over it. But every time his name came up, or a song played, or she passed the restaurant they used to go to, the same tight feeling returned in her chest.</p>
       <p>She wasn't avoiding the breakup on purpose. She just didn't know there was anything else to do besides wait it out. Nobody had ever explained that healing is a process with real steps, not just a countdown clock.</p>
     </div>
@@ -592,7 +603,7 @@
       </div>
     </div>
     <div class="photo-block reveal">
-      <img src="images/whyfail-hands-book.png" alt="Hands resting on a closed book, calm and grounded pose">
+      <img src="images/whyfail-hands-book.jpg" loading="lazy" alt="Hands resting on a closed book, calm and grounded pose">
     </div>
   </div>
 </section>
@@ -653,7 +664,7 @@
       </div>
     </div>
     <div class="photo-block sage-bg reveal">
-      <img src="images/benefits-man-walking.png" alt="Young man walking outdoors in warm afternoon light, smiling, relaxed">
+      <img src="images/benefits-man-walking.jpg" loading="lazy" alt="Young man walking outdoors in warm afternoon light, smiling, relaxed">
     </div>
   </div>
 </section>
@@ -667,7 +678,7 @@
     <div class="mockup-stage reveal">
       <div>
         <div class="mockup-row">
-          <img src="images/mockup-main-standing.png" alt="3D standing mockup of the Face It, Feel It, Finish It ebook cover">
+          <img src="images/mockup-main-standing.jpg" loading="lazy" alt="3D standing mockup of the Face It, Feel It, Finish It ebook cover">
         </div>
       </div>
     </div>
@@ -719,7 +730,7 @@
     <div class="bonus-grid">
       <div class="bonus-card reveal-left">
         <div class="bonus-cover">
-          <img src="images/bonus1-journal-cover.png" alt="The Companion Journal cover">
+          <img src="images/bonus1-journal-cover.jpg" loading="lazy" alt="The Companion Journal cover">
         </div>
         <div class="bonus-body">
           <span class="bonus-tag">Bonus 1</span>
@@ -729,7 +740,7 @@
       </div>
       <div class="bonus-card reveal-right">
         <div class="bonus-cover">
-          <img src="images/bonus2-refguide-cover.png" alt="The Unfinished Business Quick-Reference Guide cover">
+          <img src="images/bonus2-refguide-cover.jpg" loading="lazy" alt="The Unfinished Business Quick-Reference Guide cover">
         </div>
         <div class="bonus-body">
           <span class="bonus-tag">Bonus 2</span>
@@ -745,6 +756,9 @@
 <section class="section section-card">
   <div class="container">
     <div class="guarantee-box reveal">
+      <div class="guarantee-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFDF9" stroke-width="1.8"><path d="M12 2l8 3.5v6c0 5-3.4 8.9-8 10.5-4.6-1.6-8-5.5-8-10.5v-6L12 2z" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
       <h3>Our promise to you</h3>
       <p>If you go through the framework and feel it hasn't helped you understand or process your breakup, reach out within 7 days of purchase and we'll make it right.</p>
     </div>
@@ -785,23 +799,19 @@
 <section class="section section-card">
   <div class="container">
     <span class="eyebrow reveal">Reader reflections</span>
-    <h2 class="reveal" style="font-size:clamp(26px,3.6vw,36px);">Placeholder testimonials</h2>
-    <p class="reveal" style="color:var(--charcoal-soft); max-width:520px; margin-top:12px;">These are placeholders and will be replaced with real reader feedback after launch.</p>
+    <h2 class="reveal" style="font-size:clamp(26px,3.6vw,36px);">What readers are saying</h2>
     <div class="testi-grid">
       <div class="testi-card reveal">
-        <span class="testi-flag">Placeholder</span>
-        <p class="quote">"Reading through the framework helped me finally understand why I kept feeling stuck, not just that I was."</p>
-        <div class="testi-attr"><div class="initials">R.</div><span>Reader, placeholder</span></div>
+        <p class="quote">"Going from the routine of talking or texting every day, seeing one another often, to suddenly and abruptly not, that's always been the hardest part for me to adjust to. Thanks to this book."</p>
+        <div class="testi-attr"><div class="initials"><img src="images/reviewers/richard.jpg" loading="lazy" alt="Richard"></div><span>Richard</span></div>
       </div>
       <div class="testi-card reveal">
-        <span class="testi-flag">Placeholder</span>
-        <p class="quote">"It gave me actual steps to work through, not just another list of things to distract myself with."</p>
-        <div class="testi-attr"><div class="initials">T.</div><span>Reader, placeholder</span></div>
+        <p class="quote">"Hugs to everyone in this situation, we will get through this. I remember reading this book and I was in so much pain then. It gets better, the pain is gone and I'm good now."</p>
+        <div class="testi-attr"><div class="initials"><img src="images/reviewers/tomiwa.jpg" loading="lazy" alt="Tomiwa"></div><span>Tomiwa</span></div>
       </div>
       <div class="testi-card reveal">
-        <span class="testi-flag">Placeholder</span>
-        <p class="quote">"The journal bonus made it feel practical instead of just theory."</p>
-        <div class="testi-attr"><div class="initials">A.</div><span>Reader, placeholder</span></div>
+        <p class="quote">"You know when you're pretty sure your relationship is over and you have no one to talk to about it, so you search YouTube for some sort of solace. Yeah, this book is a game changer."</p>
+        <div class="testi-attr"><div class="initials"><img src="images/reviewers/amara.jpg" loading="lazy" alt="Amara"></div><span>Amara</span></div>
       </div>
     </div>
   </div>
@@ -816,7 +826,7 @@
     <div class="mockup-stage reveal" style="max-width:520px; margin-left:auto; margin-right:auto;">
       <div>
         <div class="mockup-row">
-          <img src="images/bundle-mockup.png" alt="Bundle mockup showing the main ebook and both bonus covers together">
+          <img src="images/bundle-mockup.jpg" loading="lazy" alt="Bundle mockup showing the main ebook and both bonus covers together">
         </div>
       </div>
     </div>
@@ -834,8 +844,8 @@
         <li><span class="check">✓</span> Bonus: The Quick-Reference Guide (PDF)</li>
         <li><span class="check">✓</span> Lifetime access to your downloads</li>
       </ul>
-      <a href="#" class="btn">Get Instant Access, ₦4,500</a>
-      <p class="secure-note"><span class="placeholder-tag">Checkout placeholder</span><br>Secure checkout via Selar. Link will be connected before launch.</p>
+      <a href="https://selar.com/0h33w8408b?add_to_cart=1" class="btn">Get Instant Access, ₦4,500</a>
+      <p class="secure-note">Secure checkout via Selar.</p>
     </div>
   </div>
 </section>
@@ -844,7 +854,7 @@
 <section class="section section-alt final-cta">
   <div class="container">
     <div class="photo-block dark-bg reveal" style="max-width:640px; margin:0 auto 36px;">
-      <img src="images/final-cta-forward.png" alt="Young man standing outdoors at golden hour, looking forward with quiet confidence">
+      <img src="images/final-cta-forward.jpg" loading="lazy" alt="Young man standing outdoors at golden hour, looking forward with quiet confidence">
     </div>
     <h2 class="reveal">You don't have to stay stuck.</h2>
     <p class="reveal">Healing isn't just a matter of time, it's a process. Start it today.</p>
@@ -876,7 +886,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Oluebube Favour. All rights reserved.</span>
+      <span>© 2026 Face It, Feel It, Finish It. All rights reserved.</span>
       <span>Made with care, for anyone still healing.</span>
     </div>
   </div>
