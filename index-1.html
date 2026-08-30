@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finish It: The 3-Step Way to Finally Get Over Your Breakup | Oluebube Favour</title>
+<meta name="description" content="A psychologist-backed, 3-step framework to help you stop feeling stuck after a breakup and finally heal, by Oluebube Favour.">
+
+<meta property="og:title" content="Finish It: The 3-Step Way to Finally Get Over Your Breakup">
+<meta property="og:description" content="A psychologist-backed, 3-step framework to help you stop feeling stuck after a breakup and finally heal, by Oluebube Favour.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --cream:#F6EFE4;
+    --cream-alt:#EFE2D0;
+    --terracotta:#B5502E;
+    --terracotta-dark:#8F3D22;
+    --sage:#8A9A7E;
+    --sage-dark:#5F6E54;
+    --charcoal:#2E2016;
+    --charcoal-soft:#4A382C;
+    --deep:#2A1B12;
+    --white:#FFFDF9;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    font-family:'Inter', sans-serif;
+    background:var(--cream);
+    color:var(--charcoal);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3,h4{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    line-height:1.15;
+    letter-spacing:-0.01em;
+    color:var(--charcoal);
+  }
+
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  ul{list-style:none;}
+
+  .container{
+    max-width:1080px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  .section{padding:88px 0;}
+  .section-alt{background:var(--deep); color:var(--cream);}
+  .section-alt h2, .section-alt h3{color:var(--white);}
+  .section-card{background:var(--cream-alt);}
+
+  .eyebrow{
+    font-family:'Inter', sans-serif;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--terracotta);
+    margin-bottom:14px;
+    display:inline-block;
+  }
+  .section-alt .eyebrow{color:#E3A67D;}
+
+  .btn{
+    display:inline-block;
+    background:var(--terracotta);
+    color:var(--white);
+    font-family:'Inter', sans-serif;
+    font-weight:600;
+    font-size:16px;
+    padding:16px 32px;
+    border-radius:6px;
+    border:none;
+    cursor:pointer;
+    transition:transform 240ms ease, background 240ms ease, box-shadow 240ms ease;
+    box-shadow:0 6px 18px rgba(181,80,46,0.25);
+  }
+  .btn:hover{background:var(--terracotta-dark); transform:translateY(-2px); box-shadow:0 10px 24px rgba(181,80,46,0.32);}
+  .btn:focus-visible{outline:3px solid var(--sage); outline-offset:3px;}
+  .btn-ghost{
+    background:transparent;
+    color:var(--white);
+    border:1.5px solid rgba(255,255,255,0.4);
+    box-shadow:none;
+  }
+  .btn-ghost:hover{background:rgba(255,255,255,0.08); transform:translateY(-2px);}
+
+  /* reveal on scroll */
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity 700ms ease, transform 700ms ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+  .reveal-left{opacity:0; transform:translateX(-24px); transition:opacity 700ms ease, transform 700ms ease;}
+  .reveal-left.in{opacity:1; transform:translateX(0);}
+  .reveal-right{opacity:0; transform:translateX(24px); transition:opacity 700ms ease, transform 700ms ease;}
+  .reveal-right.in{opacity:1; transform:translateX(0);}
+
+  /* ===== HERO ===== */
+  .hero{
+    padding:64px 0 80px;
+    background:linear-gradient(180deg, var(--cream) 0%, var(--cream) 70%, var(--cream-alt) 100%);
+  }
+  .byline{
+    font-size:13px;
+    color:var(--charcoal-soft);
+    margin-bottom:28px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .byline .dot{width:4px; height:4px; border-radius:50%; background:var(--sage-dark);}
+  .hero h1{
+    font-size:clamp(34px, 6vw, 56px);
+    max-width:760px;
+    margin-bottom:20px;
+  }
+  .hero .accent{color:var(--terracotta);}
+  .hero p.sub{
+    font-size:clamp(17px, 2.4vw, 20px);
+    color:var(--charcoal-soft);
+    max-width:560px;
+    margin-bottom:36px;
+  }
+  .hero-image{
+    margin-top:56px;
+    border-radius:12px;
+    overflow:hidden;
+    aspect-ratio:16/9;
+    background:linear-gradient(135deg, var(--cream-alt), #DCCBAE);
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:24px;
+  }
+  .placeholder-label{
+    font-family:'Inter';
+    font-size:13px;
+    color:var(--charcoal-soft);
+    max-width:520px;
+    line-height:1.6;
+  }
+  .placeholder-tag{
+    display:inline-block;
+    background:rgba(46,32,22,0.08);
+    padding:4px 10px;
+    border-radius:4px;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    margin-bottom:10px;
+    color:var(--charcoal-soft);
+  }
+
+  /* ===== REUSABLE PHOTO / MOCKUP BLOCKS ===== */
+  .photo-block{
+    margin-top:40px;
+    border-radius:12px;
+    overflow:hidden;
+    aspect-ratio:16/10;
+    background:linear-gradient(135deg, var(--cream-alt), #DCCBAE);
+    display:flex; align-items:center; justify-content:center;
+    text-align:center;
+    padding:24px;
+  }
+  .photo-block.sage-bg{background:linear-gradient(160deg, var(--sage) 0%, var(--sage-dark) 100%);}
+  .photo-block.dark-bg{background:linear-gradient(160deg, #3A2818 0%, var(--deep) 100%);}
+  .photo-block .placeholder-label{color:var(--charcoal-soft);}
+  .photo-block.sage-bg .placeholder-label, .photo-block.dark-bg .placeholder-label{color:rgba(255,255,255,0.88);}
+  .photo-block.sage-bg .placeholder-tag, .photo-block.dark-bg .placeholder-tag{background:rgba(255,255,255,0.18); color:#fff;}
+
+  .mockup-stage{
+    margin-top:40px;
+    border-radius:14px;
+    background:linear-gradient(160deg, var(--cream-alt) 0%, #E4D3B8 100%);
+    padding:40px 24px;
+    display:flex; align-items:center; justify-content:center;
+    min-height:220px;
+    text-align:center;
+  }
+  .mockup-card{
+    width:120px; height:170px;
+    background:var(--terracotta);
+    border-radius:6px;
+    box-shadow:0 18px 30px rgba(46,32,22,0.25);
+    transform:rotate(-6deg);
+    flex-shrink:0;
+  }
+  .mockup-card.b{transform:rotate(3deg); background:var(--terracotta-dark); margin-left:-30px; margin-top:16px;}
+  .mockup-card.c{transform:rotate(10deg); background:var(--sage-dark); margin-left:-30px; margin-top:28px;}
+  .mockup-row{display:flex; align-items:flex-end; justify-content:center;}
+  .mockup-caption{margin-top:20px;}
+
+  .photo-block img, .hero-image img, .story-visual img{
+    width:100%; height:100%; object-fit:cover; border-radius:inherit;
+  }
+  .mockup-stage img{
+    max-width:220px; width:100%; border-radius:8px;
+    box-shadow:0 20px 40px rgba(46,32,22,0.25);
+  }
+  .bonus-cover img{width:100%; height:100%; object-fit:cover;}
+  .flag-note{
+    font-size:11px; color:var(--terracotta-dark); font-weight:600;
+    margin-top:8px; display:block;
+  }
+
+  /* ===== PROBLEM ===== */
+  .problem-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:32px;
+    margin-top:48px;
+  }
+  .problem-card{padding:8px 0;}
+  .icon-circle{
+    width:48px; height:48px;
+    border-radius:50%;
+    border:1.5px solid var(--terracotta);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:20px;
+  }
+  .problem-card p{color:var(--charcoal-soft); font-size:15px;}
+  .problem-card h4{font-size:19px; margin-bottom:10px; font-weight:600;}
+
+  /* ===== STORY (split) ===== */
+  .split{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:64px;
+    align-items:center;
+  }
+  .story-visual{
+    aspect-ratio:4/5;
+    border-radius:12px;
+    background:linear-gradient(160deg, var(--sage) 0%, var(--sage-dark) 100%);
+    display:flex; align-items:center; justify-content:center;
+    padding:24px;
+  }
+  .story-visual .placeholder-label{color:rgba(255,255,255,0.85);}
+  .story-visual .placeholder-tag{background:rgba(255,255,255,0.18); color:#fff;}
+  .story-text h2{margin-bottom:22px; font-size:clamp(26px,3.6vw,36px);}
+  .story-text p{color:var(--charcoal-soft); margin-bottom:16px; font-size:16px;}
+
+  /* ===== WHY FAIL ===== */
+  .fail-list{margin-top:40px; display:grid; gap:20px;}
+  .fail-item{
+    display:flex; gap:16px; align-items:flex-start;
+    padding:20px 24px;
+    background:var(--cream-alt);
+    border-radius:8px;
+    border-left:3px solid var(--terracotta);
+  }
+  .fail-item h4{font-size:16px; margin-bottom:4px;}
+  .fail-item p{color:var(--charcoal-soft); font-size:14.5px;}
+
+  /* ===== SOLUTION (framework) ===== */
+  .framework-thread{
+    position:relative;
+    margin-top:64px;
+  }
+  .framework-steps{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:28px;
+    position:relative;
+    z-index:2;
+  }
+  .thread-svg{position:absolute; top:38px; left:0; width:100%; height:60px; z-index:1;}
+  .step-card{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.14);
+    border-radius:12px;
+    padding:32px 24px;
+    text-align:left;
+  }
+  .step-num{
+    font-family:'Fraunces';
+    font-size:14px;
+    color:#E3A67D;
+    font-weight:600;
+    margin-bottom:16px;
+    letter-spacing:0.05em;
+  }
+  .step-card h3{font-size:22px; color:#fff; margin-bottom:10px;}
+  .step-card p{color:rgba(255,253,249,0.75); font-size:14.5px;}
+
+  /* ===== BENEFITS ===== */
+  .benefit-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:32px 40px;
+    margin-top:48px;
+  }
+  .benefit-item{display:flex; gap:18px; align-items:flex-start;}
+  .benefit-icon{
+    flex-shrink:0;
+    width:44px; height:44px;
+    border-radius:10px;
+    background:var(--cream-alt);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .benefit-item h4{font-size:17px; margin-bottom:6px;}
+  .benefit-item p{font-size:14.5px; color:var(--charcoal-soft);}
+
+  /* ===== WHATS INSIDE / CHAPTERS ===== */
+  .card-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:24px;
+    margin-top:48px;
+  }
+  .content-card{
+    background:var(--white);
+    border:1px solid rgba(46,32,22,0.1);
+    border-radius:10px;
+    padding:28px 24px;
+  }
+  .content-card .icon-circle{border-color:var(--sage-dark); margin-bottom:18px;}
+  .content-card h4{font-size:17px; margin-bottom:8px;}
+  .content-card p{font-size:14px; color:var(--charcoal-soft);}
+
+  .chapter-list{margin-top:40px; display:grid; gap:0;}
+  .chapter-row{
+    display:flex; align-items:baseline; gap:20px;
+    padding:20px 0;
+    border-bottom:1px solid rgba(46,32,22,0.12);
+  }
+  .chapter-row:first-child{border-top:1px solid rgba(46,32,22,0.12);}
+  .chapter-index{font-family:'Fraunces'; font-size:15px; color:var(--terracotta); font-weight:600; min-width:34px;}
+  .chapter-row h4{font-size:17px; margin-bottom:4px;}
+  .chapter-row p{font-size:14px; color:var(--charcoal-soft);}
+
+  /* ===== BONUSES ===== */
+  .bonus-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:28px;
+    margin-top:48px;
+  }
+  .bonus-card{
+    background:var(--white);
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid rgba(46,32,22,0.1);
+  }
+  .bonus-cover{
+    aspect-ratio:3/4;
+    background:linear-gradient(160deg, var(--terracotta) 0%, var(--terracotta-dark) 100%);
+    display:flex; align-items:center; justify-content:center;
+    padding:20px;
+  }
+  .bonus-cover .placeholder-label{color:rgba(255,255,255,0.85);}
+  .bonus-cover .placeholder-tag{background:rgba(255,255,255,0.2); color:#fff;}
+  .bonus-body{padding:22px 24px;}
+  .bonus-tag{
+    font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--terracotta); margin-bottom:10px; display:block;
+  }
+  .bonus-body h4{font-size:18px; margin-bottom:8px;}
+  .bonus-body p{font-size:14px; color:var(--charcoal-soft);}
+
+  /* ===== GUARANTEE ===== */
+  .guarantee-box{
+    max-width:680px;
+    margin:48px auto 0;
+    text-align:center;
+    padding:44px 36px;
+    background:var(--cream-alt);
+    border-radius:14px;
+  }
+  .guarantee-box h3{font-size:24px; margin-bottom:14px;}
+  .guarantee-box p{color:var(--charcoal-soft); font-size:15.5px;}
+
+  /* ===== FAQ ===== */
+  .faq-list{margin-top:40px; max-width:760px;}
+  .faq-item{border-bottom:1px solid rgba(46,32,22,0.14);}
+  .faq-q{
+    width:100%;
+    background:none; border:none;
+    text-align:left;
+    padding:22px 0;
+    font-family:'Fraunces';
+    font-size:17px;
+    font-weight:500;
+    color:var(--charcoal);
+    display:flex; justify-content:space-between; align-items:center;
+    cursor:pointer;
+  }
+  .faq-q .plus{font-size:20px; color:var(--terracotta); transition:transform 240ms ease; flex-shrink:0; margin-left:16px;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 320ms ease;
+  }
+  .faq-a p{padding-bottom:22px; color:var(--charcoal-soft); font-size:15px; max-width:640px;}
+
+  /* ===== TESTIMONIALS ===== */
+  .testi-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:24px;
+    margin-top:48px;
+  }
+  .testi-card{
+    background:var(--white);
+    border:1px solid rgba(46,32,22,0.1);
+    border-radius:10px;
+    padding:28px 24px;
+  }
+  .testi-flag{
+    font-size:11px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase;
+    color:var(--sage-dark); margin-bottom:14px; display:block;
+  }
+  .testi-card p.quote{font-size:15px; color:var(--charcoal-soft); font-style:italic; margin-bottom:16px;}
+  .testi-attr{display:flex; align-items:center; gap:10px;}
+  .initials{
+    width:36px; height:36px; border-radius:50%;
+    background:var(--cream-alt);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces'; font-size:13px; font-weight:600; color:var(--terracotta);
+  }
+  .testi-attr span{font-size:13.5px; color:var(--charcoal-soft);}
+
+  /* ===== PRICING ===== */
+  .pricing-box{
+    max-width:520px;
+    margin:48px auto 0;
+    background:var(--white);
+    border-radius:16px;
+    padding:44px 36px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(46,32,22,0.1);
+    border:1px solid rgba(46,32,22,0.08);
+  }
+  .price-badge{
+    display:inline-block;
+    background:var(--terracotta);
+    color:var(--white);
+    font-size:12px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase;
+    padding:6px 14px; border-radius:20px;
+    margin-bottom:20px;
+  }
+  .price-row{display:flex; align-items:baseline; justify-content:center; gap:12px; margin-bottom:6px;}
+  .price-now{font-family:'Fraunces'; font-size:44px; font-weight:600; color:var(--charcoal);}
+  .price-was{font-size:18px; color:var(--charcoal-soft); text-decoration:line-through;}
+  .pricing-box p.note{color:var(--charcoal-soft); font-size:14px; margin-bottom:28px;}
+  .includes{text-align:left; margin-bottom:32px; display:grid; gap:10px;}
+  .includes li{display:flex; gap:10px; font-size:14.5px; color:var(--charcoal-soft); align-items:flex-start;}
+  .includes li .check{color:var(--sage-dark); font-weight:700; flex-shrink:0;}
+  .pricing-box .btn{width:100%; font-size:17px;}
+  .secure-note{font-size:12.5px; color:var(--charcoal-soft); margin-top:16px;}
+
+  /* ===== FINAL CTA ===== */
+  .final-cta{text-align:center;}
+  .final-cta h2{font-size:clamp(28px,4.4vw,42px); max-width:640px; margin:0 auto 20px;}
+  .final-cta p{color:rgba(255,253,249,0.78); max-width:520px; margin:0 auto 36px; font-size:16px;}
+  .final-cta-buttons{display:flex; gap:16px; justify-content:center; flex-wrap:wrap;}
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--charcoal); color:rgba(255,253,249,0.7); padding:48px 0 32px;}
+  .footer-grid{
+    display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:24px;
+    padding-bottom:32px; border-bottom:1px solid rgba(255,253,249,0.12); margin-bottom:24px;
+  }
+  .footer-brand h4{color:#fff; font-size:18px; margin-bottom:8px;}
+  .footer-brand p{font-size:13.5px; max-width:280px;}
+  .footer-links{display:flex; gap:32px; flex-wrap:wrap;}
+  .footer-col h5{color:#fff; font-size:13px; margin-bottom:12px; font-weight:600;}
+  .footer-col a{display:block; font-size:13.5px; margin-bottom:8px; color:rgba(255,253,249,0.7);}
+  .footer-bottom{font-size:12.5px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;}
+
+  /* ===== MOBILE ===== */
+  @media (max-width:860px){
+    .section{padding:64px 0;}
+    .problem-grid, .benefit-grid, .card-grid, .bonus-grid, .testi-grid, .framework-steps{
+      grid-template-columns:1fr;
+    }
+    .split{grid-template-columns:1fr; gap:40px;}
+    .story-visual{order:-1;}
+    .thread-svg{display:none;}
+    .footer-grid{flex-direction:column;}
+    .mockup-card{width:90px; height:128px;}
+    .mockup-card.b, .mockup-card.c{width:76px; height:112px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container">
+    <div class="byline">
+      <span>By Oluebube Favour</span><span class="dot"></span><span>August 26, 2026</span>
+    </div>
+    <h1 class="reveal in">Still stuck after the breakup? <span class="accent">There's a reason, and there's a way out.</span></h1>
+    <p class="sub reveal in">A simple, psychologist-backed 3-step process to finally stop replaying the past and start feeling like yourself again, not just another list of tips you've already tried.</p>
+    <a href="#pricing" class="btn">Start Healing Today</a>
+
+    <div class="hero-image reveal">
+      <img src="images/hero-woman-window.png" alt="Woman sitting by a window in warm light, holding a mug, reflective mood">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="section" id="problem">
+  <div class="container">
+    <span class="eyebrow reveal">The problem</span>
+    <h2 class="reveal" style="font-size:clamp(26px,3.6vw,36px); max-width:640px;">If this sounds like you, you're not broken. You're stuck.</h2>
+    <div class="problem-grid">
+      <div class="problem-card reveal">
+        <div class="icon-circle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B5502E" stroke-width="1.6"><path d="M12 3v9l6 3" stroke-linecap="round"/></svg>
+        </div>
+        <h4>You keep replaying it</h4>
+        <p>The same memories, the same conversations, on a loop you can't seem to turn off, even months later.</p>
+      </div>
+      <div class="problem-card reveal">
+        <div class="icon-circle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B5502E" stroke-width="1.6"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-4 5 5 0 0 1 9 4c-2 4.5-9 9-9 9z"/></svg>
+        </div>
+        <h4>You blame yourself</h4>
+        <p>A quiet voice keeps telling you it was your fault, or that you're not enough, and it's exhausting to argue with.</p>
+      </div>
+      <div class="problem-card reveal">
+        <div class="icon-circle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B5502E" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2" stroke-linecap="round"/></svg>
+        </div>
+        <h4>"Time will heal it" hasn't worked</h4>
+        <p>You've waited. You've tried distracting yourself. But the feeling hasn't actually moved, it's just gone quiet.</p>
+      </div>
+    </div>
+    <div class="photo-block reveal">
+      <img src="images/problem-bed-dim.png" alt="Person sitting on the edge of a bed in dim evening light, phone face-down beside them">
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="section section-card">
+  <div class="container split">
+    <div class="story-visual reveal-left">
+      <img src="images/story-phone-photo.png" alt="Hands holding a phone showing a blurred old photo of two people">
+    </div>
+    <div class="story-text reveal-right">
+      <span class="eyebrow">A familiar story</span>
+      <h2>"I told myself I was fine. I wasn't."</h2>
+      <p><span class="placeholder-tag">Placeholder narrative</span></p>
+      <p>She kept busy. New gym routine, new friends, a packed calendar. From the outside, she looked completely over it. But every time his name came up, or a song played, or she passed the restaurant they used to go to, the same tight feeling returned in her chest.</p>
+      <p>She wasn't avoiding the breakup on purpose. She just didn't know there was anything else to do besides wait it out. Nobody had ever explained that healing is a process with real steps, not just a countdown clock.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY MOST SOLUTIONS FAIL ============ -->
+<section class="section">
+  <div class="container">
+    <span class="eyebrow reveal">Why the usual advice doesn't work</span>
+    <h2 class="reveal" style="font-size:clamp(26px,3.6vw,36px); max-width:660px;">"Just move on" was never a real instruction.</h2>
+    <div class="fail-list">
+      <div class="fail-item reveal">
+        <div>
+          <h4>Generic tips skip the actual process</h4>
+          <p>"Delete their number" or "stay busy" might distract you for a while, but they don't address why you're stuck in the first place.</p>
+        </div>
+      </div>
+      <div class="fail-item reveal">
+        <div>
+          <h4>Time alone doesn't resolve unprocessed feelings</h4>
+          <p>Research on emotional recovery shows that avoided feelings don't fade with time, they stay frozen until they're actually worked through.</p>
+        </div>
+      </div>
+      <div class="fail-item reveal">
+        <div>
+          <h4>You don't know what's actually hurting</h4>
+          <p>Most people feel a big, tangled ball of sadness and anger without being able to name what's underneath it, which makes it impossible to resolve.</p>
+        </div>
+      </div>
+    </div>
+    <div class="photo-block reveal">
+      <img src="images/whyfail-hands-book.png" alt="Hands resting on a closed book, calm and grounded pose">
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOLUTION / FRAMEWORK ============ -->
+<section class="section section-alt" id="framework">
+  <div class="container">
+    <span class="eyebrow reveal">The solution</span>
+    <h2 class="reveal" style="font-size:clamp(26px,4vw,38px); max-width:600px;">The Face It, Feel It, Finish It Framework</h2>
+    <p class="reveal" style="color:rgba(255,253,249,0.75); max-width:560px; margin-top:16px; font-size:16px;">A 3-step process, grounded in real psychological research on emotional recovery, that walks you from feeling frozen to genuinely at peace.</p>
+
+    <div class="framework-thread">
+      <svg class="thread-svg" viewBox="0 0 900 60" preserveAspectRatio="none">
+        <path d="M150 30 C 300 -10, 350 70, 450 30 S 600 -10, 750 30" stroke="#8A9A7E" stroke-width="2" fill="none" stroke-dasharray="6 8"/>
+      </svg>
+      <div class="framework-steps">
+        <div class="step-card reveal">
+          <div class="step-num">STEP 1</div>
+          <h3>Face It</h3>
+          <p>Stop avoiding the reminders and the feelings. Learn to tolerate what comes up instead of numbing it, so real change can begin.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">STEP 2</div>
+          <h3>Feel It</h3>
+          <p>Separate the tangled sadness and anger. Find the deeper hurt underneath, and understand what you truly need to feel whole again.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">STEP 3</div>
+          <h3>Finish It</h3>
+          <p>Move through healthy anger and real grief to genuine closure, whether that means forgiveness, distance, or simply letting go.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BENEFITS ============ -->
+<section class="section">
+  <div class="container">
+    <span class="eyebrow reveal">What changes for you</span>
+    <h2 class="reveal" style="font-size:clamp(26px,3.6vw,36px); max-width:600px;">By the end, you'll finally feel like yourself again.</h2>
+    <div class="benefit-grid">
+      <div class="benefit-item reveal">
+        <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5F6E54" stroke-width="1.6"><path d="M4 12h16M12 4v16" stroke-linecap="round"/></svg></div>
+        <div><h4>Understand why you're stuck</h4><p>Finally see the real reason healing hasn't happened yet, and stop blaming yourself for it.</p></div>
+      </div>
+      <div class="benefit-item reveal">
+        <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5F6E54" stroke-width="1.6"><path d="M12 3v18M5 10l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><h4>Process the real hurt</h4><p>Move past the surface anger or numbness to what's actually underneath, where real healing starts.</p></div>
+      </div>
+      <div class="benefit-item reveal">
+        <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5F6E54" stroke-width="1.6"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><h4>Reach genuine closure</h4><p>Get to a real ending, on your terms, instead of staying in limbo indefinitely.</p></div>
+      </div>
+      <div class="benefit-item reveal">
+        <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5F6E54" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2" stroke-linecap="round"/></svg></div>
+        <div><h4>A process, not just a countdown</h4><p>Stop waiting for time to fix it, and start actively working through it, at your own pace.</p></div>
+      </div>
+    </div>
+    <div class="photo-block sage-bg reveal">
+      <img src="images/benefits-man-walking.png" alt="Young man walking outdoors in warm afternoon light, smiling, relaxed">
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT'S INSIDE ============ -->
+<section class="section section-card">
+  <div class="container">
+    <span class="eyebrow reveal">What's inside</span>
+    <h2 class="reveal" style="font-size:clamp(26px,3.6vw,36px); max-width:600px;">Everything you need to work through the framework.</h2>
+
+    <div class="mockup-stage reveal">
+      <div>
+        <div class="mockup-row">
+          <img src="images/mockup-main-standing.png" alt="3D standing mockup of the Face It, Feel It, Finish It ebook cover">
+        </div>
+      </div>
+    </div>
+
+    <div class="card-grid">
+      <div class="content-card reveal">
+        <div class="icon-circle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5F6E54" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16" /></svg></div>
+        <h4>The full 3-step framework</h4>
+        <p>A clear, guided walkthrough of Face It, Feel It, and Finish It, in plain, everyday language.</p>
+      </div>
+      <div class="content-card reveal">
+        <div class="icon-circle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5F6E54" stroke-width="1.6"><path d="M12 4v16M4 12h16" stroke-linecap="round"/></svg></div>
+        <h4>Real, relatable stories</h4>
+        <p>Grounded examples that help you see exactly where you are in the process, and what to do next.</p>
+      </div>
+      <div class="content-card reveal">
+        <div class="icon-circle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5F6E54" stroke-width="1.6"><path d="M9 11l3 3 8-8M20 12a8 8 0 1 1-3-6.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h4>Practical action steps</h4>
+        <p>Simple exercises for each stage, so you're not just reading, you're actually working through it.</p>
+      </div>
+    </div>
+
+    <div class="chapter-list">
+      <div class="chapter-row reveal">
+        <span class="chapter-index">01</span>
+        <div><h4>Why "just give it time" isn't enough</h4><p>Understanding what's really keeping you stuck.</p></div>
+      </div>
+      <div class="chapter-row reveal">
+        <span class="chapter-index">02</span>
+        <div><h4>Face It: stepping out of avoidance</h4><p>Learning to tolerate the feelings instead of numbing them.</p></div>
+      </div>
+      <div class="chapter-row reveal">
+        <span class="chapter-index">03</span>
+        <div><h4>Feel It: finding what's underneath</h4><p>Separating sadness and anger to reach the real hurt and your real needs.</p></div>
+      </div>
+      <div class="chapter-row reveal">
+        <span class="chapter-index">04</span>
+        <div><h4>Finish It: grief, anger, and letting go</h4><p>Moving through healthy anger and real grief toward genuine closure.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BONUSES ============ -->
+<section class="section">
+  <div class="container">
+    <span class="eyebrow reveal">Free bonuses included</span>
+    <h2 class="reveal" style="font-size:clamp(26px,3.6vw,36px); max-width:600px;">Two tools to help you actually apply what you learn.</h2>
+    <div class="bonus-grid">
+      <div class="bonus-card reveal-left">
+        <div class="bonus-cover">
+          <img src="images/bonus1-journal-cover.png" alt="The Companion Journal cover">
+        </div>
+        <div class="bonus-body">
+          <span class="bonus-tag">Bonus 1</span>
+          <h4>The Face It, Feel It, Finish It Companion Journal</h4>
+          <p>Guided journaling prompts for each of the 3 steps, so you can work through your own breakup alongside the book.</p>
+        </div>
+      </div>
+      <div class="bonus-card reveal-right">
+        <div class="bonus-cover">
+          <img src="images/bonus2-refguide-cover.png" alt="The Unfinished Business Quick-Reference Guide cover">
+        </div>
+        <div class="bonus-body">
+          <span class="bonus-tag">Bonus 2</span>
+          <h4>The Unfinished Business Quick-Reference Guide</h4>
+          <p>A one-page cheat sheet summarizing the framework, the signs of being stuck at each stage, and what to do next.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GUARANTEE ============ -->
+<section class="section section-card">
+  <div class="container">
+    <div class="guarantee-box reveal">
+      <h3>Our promise to you</h3>
+      <p><span class="placeholder-tag">Placeholder, confirm terms</span><br>If you go through the framework and feel it hasn't helped you understand or process your breakup, reach out within 7 days of purchase and we'll make it right.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section">
+  <div class="container">
+    <span class="eyebrow reveal">Questions</span>
+    <h2 class="reveal" style="font-size:clamp(26px,3.6vw,36px);">Frequently asked questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">I've tried to move on before and failed. Why would this be different?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Most past attempts likely relied on distraction or willpower, "stay busy," "don't check their page." This framework instead walks you through the actual psychological process of resolving unfinished business, based on real clinical research, not motivation alone.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can a book really help with something this painful?<span class="plus">+</span></button>
+        <div class="faq-a"><p>A book can't replace therapy for severe distress, but for most people working through a breakup, a clear, guided process makes a real difference, especially when therapy isn't easily accessible. The framework is drawn directly from established emotion-focused therapy research.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is this just generic advice with a new name?<span class="plus">+</span></button>
+        <div class="faq-a"><p>No. The Face It, Feel It, Finish It framework is built on documented psychological research into how people actually resolve emotional "unfinished business," not repackaged generic tips.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How long does the process take?<span class="plus">+</span></button>
+        <div class="faq-a"><p>It's different for everyone, and it's rarely a straight line. The book walks you through each step at your own pace, so you can move forward wherever you currently are.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What format do I receive it in?<span class="plus">+</span></button>
+        <div class="faq-a"><p>You'll receive the full ebook and both bonuses as downloadable PDFs, delivered instantly after checkout.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section section-card">
+  <div class="container">
+    <span class="eyebrow reveal">Reader reflections</span>
+    <h2 class="reveal" style="font-size:clamp(26px,3.6vw,36px);">Placeholder testimonials</h2>
+    <p class="reveal" style="color:var(--charcoal-soft); max-width:520px; margin-top:12px;">These are placeholders and will be replaced with real reader feedback after launch.</p>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <span class="testi-flag">Placeholder</span>
+        <p class="quote">"Reading through the framework helped me finally understand why I kept feeling stuck, not just that I was."</p>
+        <div class="testi-attr"><div class="initials">R.</div><span>Reader, placeholder</span></div>
+      </div>
+      <div class="testi-card reveal">
+        <span class="testi-flag">Placeholder</span>
+        <p class="quote">"It gave me actual steps to work through, not just another list of things to distract myself with."</p>
+        <div class="testi-attr"><div class="initials">T.</div><span>Reader, placeholder</span></div>
+      </div>
+      <div class="testi-card reveal">
+        <span class="testi-flag">Placeholder</span>
+        <p class="quote">"The journal bonus made it feel practical instead of just theory."</p>
+        <div class="testi-attr"><div class="initials">A.</div><span>Reader, placeholder</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="section" id="pricing">
+  <div class="container">
+    <span class="eyebrow reveal" style="display:block; text-align:center;">Get started</span>
+    <h2 class="reveal" style="text-align:center; font-size:clamp(26px,3.6vw,36px);">Everything you need to finally move forward</h2>
+
+    <div class="mockup-stage reveal" style="max-width:520px; margin-left:auto; margin-right:auto;">
+      <div>
+        <div class="mockup-row">
+          <img src="images/bundle-mockup.png" alt="Bundle mockup showing the main ebook and both bonus covers together">
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-box reveal">
+      <span class="price-badge">Launch price</span>
+      <div class="price-row">
+        <span class="price-now">₦4,500</span>
+        <span class="price-was">₦6,500</span>
+      </div>
+      <p class="note">One-time payment. Instant download.</p>
+      <ul class="includes">
+        <li><span class="check">✓</span> The full "Face It, Feel It, Finish It" ebook (PDF)</li>
+        <li><span class="check">✓</span> Bonus: The Companion Journal (PDF)</li>
+        <li><span class="check">✓</span> Bonus: The Quick-Reference Guide (PDF)</li>
+        <li><span class="check">✓</span> Lifetime access to your downloads</li>
+      </ul>
+      <a href="#" class="btn">Get Instant Access, ₦4,500</a>
+      <p class="secure-note"><span class="placeholder-tag">Checkout placeholder</span><br>Secure checkout via Selar. Link will be connected before launch.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="section section-alt final-cta">
+  <div class="container">
+    <div class="photo-block dark-bg reveal" style="max-width:640px; margin:0 auto 36px;">
+      <img src="images/final-cta-forward.png" alt="Young man standing outdoors at golden hour, looking forward with quiet confidence">
+    </div>
+    <h2 class="reveal">You don't have to stay stuck.</h2>
+    <p class="reveal">Healing isn't just a matter of time, it's a process. Start it today.</p>
+    <div class="final-cta-buttons reveal">
+      <a href="#pricing" class="btn">Get Instant Access</a>
+      <a href="https://wa.me/2348131254416" class="btn btn-ghost">Have a question? Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>Face It, Feel It, Finish It</h4>
+        <p>By Oluebube Favour. A guided path to genuinely moving on after a breakup.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Support</h5>
+          <a href="https://wa.me/2348131254416">WhatsApp Support</a>
+        </div>
+        <div class="footer-col">
+          <h5>Get the book</h5>
+          <a href="#pricing">Pricing</a>
+          <a href="#framework">The Framework</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Oluebube Favour. All rights reserved.</span>
+      <span>Made with care, for anyone still healing.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // scroll reveal
+  const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold:0.15});
+  revealEls.forEach(el=>io.observe(el));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    const btn = item.querySelector('.faq-q');
+    const ans = item.querySelector('.faq-a');
+    btn.addEventListener('click', ()=>{
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o=>{
+        o.classList.remove('open');
+        o.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        ans.style.maxHeight = ans.scrollHeight + 'px';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
