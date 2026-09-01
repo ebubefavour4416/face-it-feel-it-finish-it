@@ -257,9 +257,15 @@
 
 <footer>
   <div class="container">
-    © 2026 Face It, Feel It, Finish It. All rights reserved.
+    <span id="current-year"></span>
   </div>
 </footer>
+
+<script>
+// Dynamic copyright year
+  document.getElementById('current-year').innerHTML =
+  '&copy; ' + new Date().getFullYear() + ' Face It, Feel It, Finish It. All rights reserved.';
+</script>
 
 </body>
 </html>
