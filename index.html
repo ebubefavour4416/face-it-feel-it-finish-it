@@ -515,7 +515,7 @@
 <section class="hero">
   <div class="container">
     <div class="byline">
-      <span>By Oluebube Favour</span><span class="dot"></span><span>August 26, 2026</span>
+      <span>Published by Oluebube Favour</span><span class="dot"></span><span>On August 26, 2026</span>
     </div>
     <h1 class="reveal in">Still stuck after the breakup? <span class="accent">There's a reason, and there's a way out.</span></h1>
     <p class="sub reveal in">A simple, psychologist-backed 3-step process to finally stop replaying the past and start feeling like yourself again, not just another list of tips you've already tried.</p>
@@ -886,12 +886,18 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Face It, Feel It, Finish It. All rights reserved.</span>
+      <span id="current-year"></span>
       <span>Made with care, for anyone still healing.</span>
     </div>
   </div>
 </footer>
 
+<script>
+  // Dynamic copyright year
+  document.getElementById('current-year').innerHTML =
+  '&copy; ' + new Date().getFullYear() + ' Face It, Feel It, Finish It. All rights reserved.';
+</script>
+  
 <script>
   // scroll reveal
   const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
